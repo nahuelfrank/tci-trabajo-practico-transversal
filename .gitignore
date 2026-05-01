@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### AL ###
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
@@ -21,3 +22,28 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+=======
+# Compilados
+*.o
+*.out
+*.exe
+*.bin
+
+# Librerías
+*.so
+*.a
+*.dll
+
+# Carpetas de build
+build/
+bin/
+
+
+# Temporales
+*.log
+*.tmp
+
+# Sistema
+.DS_Store
+Thumbs.db
+>>>>>>> 12360eb (Commit inicial)
