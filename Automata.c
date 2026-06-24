@@ -310,7 +310,7 @@ Automata* renombrarAFD(Automata* afd) {
 	renom->F = create_set();
 	renom->deterministic = 1;
 	
-	// Obtenemos la cantidad de estados (CARDINAL(Q) en tu código original)
+	// Obtenemos la cantidad de estados
 	int num_states = length(afd->Q);
 	
 	// Arreglo para mapear el índice (0, 1, 2) con el nombre original ("{q0,q1}")
@@ -323,7 +323,7 @@ Automata* renombrarAFD(Automata* afd) {
 		orig_names[idx] = strdup(auxQ->data->string); // Guardamos copia del nombre original
 		
 		char z_name[32];
-		sprintf(z_name, "z%d", idx); // Equivalente seguro a tu lógica con itoa()
+		sprintf(z_name, "z%d", idx);
 		
 		Tdata z_str = create_str_ast(z_name);
 		insert_set(&(renom->Q), z_str); // Agregamos zX a nuevoQ
