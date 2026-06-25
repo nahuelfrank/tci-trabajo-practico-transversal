@@ -61,7 +61,7 @@ int main() {
 				printf("\nSeleccione el Automata a mostrar:\n");
 				printf("1 - AFND Original\n");
 				printf("2 - AFD Convertido\n");
-				printf("3 - AFD Renombrado\n");
+				//printf("3 - AFD Renombrado\n");
 				printf("Opcion: ");
 				scanf("%d", &subOp);
 				getchar();
@@ -75,10 +75,10 @@ int main() {
 					printf("\n--- AFD Convertido ---\n");
 					mostrarAF(afd);
 					break;
-				case 3:
-					printf("\n--- AFD Renombrado ---\n");
-					mostrarAF(afdRenom);
-					break;
+				//case 3:
+				//	printf("\n--- AFD Renombrado ---\n");
+				//	mostrarAF(afdRenom);
+				//	break;
 				default:
 					printf("Opcion invalida.\n");
 				}
