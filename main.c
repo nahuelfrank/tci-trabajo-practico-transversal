@@ -120,7 +120,7 @@ int main() {
 				
 				afd = conversionAFND_AFD(af);
 				afdRenom = renombrarAFD(afd);
-				printf("\nConversion realizada y estados renombrados con exito.\n");
+				printf("\nConversion realizada.\n");
 			} else {
 				printf("Cargue un AF primero.\n");
 			}
